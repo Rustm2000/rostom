@@ -26,5 +26,15 @@ pipeline {
                 sh "mvn test"  // Run tests
             }
         }
+        stage("SonarQube Analysis") {
+            steps {
+                script {
+                    // Run SonarQube analysis
+                    withSonarQubeEnv(credentialsId: 'jenkins-sonarqube-token') { // This is your SonarQube instance name in Jenkins
+                        sh 'sonar-scanner'
+                    }
+                }
+            }
+        }
     }
 }

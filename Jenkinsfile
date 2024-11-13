@@ -1,8 +1,8 @@
 pipeline {
     agent { label 'Jenkins-Agent' }  // Fixed agent label
     tools { 
-        jdk '/usr/lib/jvm/java-11-openjdk-amd64'
-        maven '/opt/apache-maven-3.6.3'
+        jdk 'Java11'
+        maven 'Maven3'
     }
     stages {
         stage("Cleanup workspace") {

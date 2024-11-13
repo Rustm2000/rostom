@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Jenkins-Agent' }  // Fixed agent label
+    agent { label 'master' }  // Fixed agent label
     tools { 
         jdk 'Java11'
         maven 'Maven3'

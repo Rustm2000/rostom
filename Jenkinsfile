@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'Jenkins-Agent' }  // Fixed agent label
     tools { 
-        jdk 'Java17'
+        jdk 'Java11'
         maven 'Maven3'
     }
     stages {

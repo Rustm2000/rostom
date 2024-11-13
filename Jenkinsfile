@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }  // Fixed agent label
+    agent { label 'Linux (amd64)' }  // Fixed agent label
     tools { 
         jdk 'Java11'
         maven 'Maven3'
